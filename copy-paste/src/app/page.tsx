@@ -19,7 +19,7 @@ export default function Home() {
         navigator.clipboard.writeText(textRef.current.value)
       alert('Copied!')
     } catch (error) {
-      console.error("Err");
+      console.error(error);
     }
   }
 
@@ -53,6 +53,9 @@ export default function Home() {
           <FontAwesomeIcon className="p-2" icon={faCopy as IconProp} />
         </button>
       </div>
+      <pre>
+        ``````
+      </pre>
     </div>
   );
 }
